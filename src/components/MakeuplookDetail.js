@@ -55,7 +55,7 @@ const MakeuplookDetail = (props) => {
         </div>
         <div className="row">
           <div className="col-md-6 col-12">
-            <RenderMakeuplook dish={props.makeuplook} />
+            <RenderMakeuplook makeuplook={props.makeuplook} />
           </div>
           <div className="col-md-6 col-12">
             <RenderComments comments={props.comments} />

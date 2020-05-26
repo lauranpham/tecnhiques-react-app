@@ -13,10 +13,10 @@ import { addComment, fetchMakeuplooks } from "../redux/ActionCreators";
 import { actions } from "react-redux-form";
 const mapStateToProps = (state) => {
   return {
-    dishes: state.dishes,
+    makeuplooks: state.makeuplooks,
     comments: state.comments,
     promotions: state.promotions,
-    leaders: state.leaders,
+    employees: state.employees,
   };
 };
 
@@ -40,8 +40,10 @@ class Main extends Component {
       return (
         <Home
           makeuplook={this.props.makeuplooks.makeuplooks.find(
-            (makeuplooks) => makeuplooks.featured === true
+            (makeuplook) => makeuplook.featured === true
           )}
+          makeuplooksLoading={this.props.makeuplooks.isLoading}
+          makeuplooksErrMess={this.props.makeuplooks.errMess}
           promotion={this.props.promotions.find(
             (promotion) => promotion.featured === true
           )}

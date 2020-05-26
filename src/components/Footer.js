@@ -1,7 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-// Why is it not a const like in Menu.js?
 function Footer() {
   return (
     <div className="footer">
@@ -17,7 +16,7 @@ function Footer() {
                 <Link to="/aboutus">About Us</Link>
               </li>
               <li>
-                <Link to="/menu">Menu</Link>
+                <Link to="/portfolio">Portfolio</Link>
               </li>
               <li>
                 <Link to="/contactus">Contact Us</Link>
