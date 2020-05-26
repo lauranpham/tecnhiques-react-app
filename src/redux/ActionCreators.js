@@ -24,7 +24,7 @@ export const makeuplooksLoading = () => ({
 });
 
 export const makeuplooksFailed = (errmess) => ({
-  type: ActionTypes.MAKEUPLOOOKS_FAILED,
+  type: ActionTypes.MAKEUPLOOKS_FAILED,
   payload: errmess,
 });
 
