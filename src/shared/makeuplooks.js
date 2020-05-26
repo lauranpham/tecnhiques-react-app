@@ -1,0 +1,38 @@
+export const MAKEUPLOOKS = [
+  {
+    id: 0,
+    name: "Bridal",
+    image: "/assets/images/bridal1.png",
+    category: "bridal",
+    label: "natural",
+    featured: true,
+    description: "A natural bridal look",
+  },
+  {
+    id: 1,
+    name: "Formal",
+    image: "/assets/images/formal1.png",
+    category: "formal",
+    label: "natural",
+    featured: false,
+    description: "A natural formal look",
+  },
+  {
+    id: 2,
+    name: "Halloween",
+    image: "/assets/images/halloween1.png",
+    category: "halloween",
+    label: "natural",
+    featured: false,
+    description: "A natural halloween look",
+  },
+  {
+    id: 3,
+    name: "Fashion",
+    image: "/assets/images/fashion1.png",
+    category: "fasion",
+    label: "natural",
+    featured: false,
+    description: "A natural fasion look",
+  },
+];
