@@ -1,4 +1,4 @@
-export const REVIEWS = [
+export const COMMENTS = [
   {
     id: 0,
     makeuplookId: 0,
