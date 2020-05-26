@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import Portfolio from "./Portfolio.js";
+import MakeuplookDetail from "./MakeuplookDetail";
 import Header from "./Header";
 import Footer from "./Footer";
 import Home from "./Home";
@@ -8,7 +9,7 @@ import About from "./About";
 import { Switch, Route, Redirect, withRouter } from "react-router-dom";
 // allows connection to provider
 import { connect } from "react-redux";
-import { addComment, fetchDishes } from "../redux/ActionCreators";
+import { addComment, fetchMakeuplooks } from "../redux/ActionCreators";
 import { actions } from "react-redux-form";
 const mapStateToProps = (state) => {
   return {
@@ -20,8 +21,8 @@ const mapStateToProps = (state) => {
 };
 
 const mapDispatchToProps = (dispatch) => ({
-  addReview: (makeuplookId, rating, author, comment) =>
-    dispatch(addReview(makeuplookId, rating, author, comment)),
+  addComment: (makeuplookId, rating, author, comment) =>
+    dispatch(addComment(makeuplookId, rating, author, comment)),
   fetchMakeuplooks: () => {
     dispatch(fetchMakeuplooks());
   },
@@ -58,11 +59,11 @@ class Main extends Component {
             (makeuplook) =>
               makeuplook.id === parseInt(match.params.makeuplookId, 10)
           )}
-          reviews={this.props.reviews.filter(
-            (review) =>
-              review.makeuplookId === parseInt(match.params.makeuplookId, 10)
+          comments={this.props.comments.filter(
+            (comment) =>
+              comment.makeuplookId === parseInt(match.params.makeuplookId, 10)
           )}
-          addReview={this.props.addReview}
+          addComment={this.props.addComment}
         />
       );
     };
