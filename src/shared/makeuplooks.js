@@ -33,6 +33,6 @@ export const MAKEUPLOOKS = [
     category: "fasion",
     label: "natural",
     featured: false,
-    description: "A natural fasion look",
+    description: "A natural fashion look",
   },
 ];

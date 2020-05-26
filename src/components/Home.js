@@ -17,7 +17,7 @@ function RenderCard({ item, isLoading, errMess }) {
   } else {
     return (
       <Card>
-        <CardImg src={item.image} alt={item.name} />
+        <CardImg src={item.image} alt={item.name} height="100%" width="100%" />
         <CardBody>
           <CardTitle>{item.name}</CardTitle>
           {item.designation ? (
