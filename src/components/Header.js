@@ -61,7 +61,7 @@ class Header extends Component {
                 src="assets/images/logo.png"
                 height="30"
                 width="41"
-                alt="TecNhiques MUA"
+                alt="Nhi Makeup Artistry"
               />
             </NavbarBrand>
             <Collapse isOpen={this.state.isNavOpen} navbar>
@@ -102,7 +102,7 @@ class Header extends Component {
           <div className="container">
             <div className="row row-header">
               <div className="col-12 col-sm-6">
-                <h1>TecNhiques MUA</h1>
+                <h1>Nhi Makeup Artistry</h1>
                 <p>Highlighting your beauty for every life occassion</p>
               </div>
             </div>

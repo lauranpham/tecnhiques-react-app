@@ -51,8 +51,8 @@ function About(props) {
         <div className="col-12 col-md-6">
           <h2> Our History </h2>{" "}
           <p>
-            Started in 2010, TecNhiques Makeup Artistry aims to cater to your
-            beauty needs for any occassion{" "}
+            Started in 2010, Nhi Makeup Artistry aims to cater to your beauty
+            needs for any occassion{" "}
           </p>{" "}
         </div>{" "}
         <div className="col-12 col-md-5">

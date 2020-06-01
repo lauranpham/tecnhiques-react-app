@@ -29,14 +29,24 @@ text {
 }
 
 .footer {
-  background-color: #d1c4e9;
+  background-color: #7e6d95;
   margin: 0px auto;
   padding: 20px 0px 20px 0px;
+  color: floralwhite;
+}
+
+a {
+  color: floralwhite;
+}
+
+.breadcrumb {
+  background-color: #ccc5d5;
+  border-radius: 0;
 }
 .jumbotron {
   padding: 70px 30px 70px 30px;
   margin: 0px auto;
-  background: #9575cd;
+  background: #a599b5;
   color: floralwhite;
 }
 
@@ -47,7 +57,7 @@ address {
 }
 
 .navbar-dark {
-  background-color: #512da8;
+  background-color: #7e6d95;
 }
 .App {
   text-align: center;
